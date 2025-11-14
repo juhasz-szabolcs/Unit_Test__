@@ -19,4 +19,11 @@ def test_multiply():
     assert multiply(-2, -3) == 6
     assert multiply(0, 10) == 0
 
+def test_divide():
+    assert divide(10, 2) == 5
+    assert divide(-6, 2) == -3
+    assert divide(-9, -3) == 3
+    assert divide(0, 5) == 0
+    assert divide(5, 0) == "Error: Division by zero"
+
 # python -m pytest .\test_calculator.py -v
